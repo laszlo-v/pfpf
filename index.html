@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="One page portfolio website" />
+    <title>Portfolio | Laszlo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <!-- home and nav starts here-->
+    <div class="home-container" id="home">
+      <nav class="navigation">
+        <h1 tabindex="0">Laszlo</h1>
+        <ul>
+          <li>
+            <a href="#home" class="nav-link-active" tabindex="0">Home</a>
+          </li>
+          <li><a href="#work" tabindex="0">Work</a></li>
+          <li><a href="#about" tabindex="0">About</a></li>
+          <li><a href="#contact" tabindex="0">Contact</a></li>
+        </ul>
+        <button
+          class="ham-container"
+          aria-label="Toggle menu"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <span class="ham-line line-1"></span>
+          <span class="ham-line line-2"></span>
+          <span class="ham-line line-3"></span>
+        </button>
+      </nav>
+    </div>
+    <!-- home and nav ends here-->
+
+    <!-- work starts here -->
+    <section class="container" id="work">
+      <h2 tabindex="0">Work<span>Some of my projects</span></h2>
+      <div class="works">
+        <div class="work-top">
+          <a href="#!"
+            ><img
+              src="images/image-1.jpg"
+              alt="portfolio sample"
+              loading="lazy"
+          /></a>
+        </div>
+        <div class="work-bottom">
+          <h3 tabindex="0">Slowmo fall</h3>
+          <p tabindex="0"><em>Photo manipulation</em></p>
+        </div>
+      </div>
+      <div class="works">
+        <div class="work-top">
+          <a href="#!"
+            ><img
+              src="images/image-2.jpg"
+              alt="portfolio sample"
+              loading="lazy"
+          /></a>
+        </div>
+        <div class="work-bottom">
+          <h3 tabindex="0">Speed audi</h3>
+          <p tabindex="0"><em>Marketing</em></p>
+        </div>
+      </div>
+      <div class="works">
+        <div class="work-top">
+          <a href="#!"
+            ><img
+              src="images/image-3.jpg"
+              alt="portfolio sample"
+              loading="lazy"
+          /></a>
+        </div>
+        <div class="work-bottom">
+          <h3 tabindex="0">The wild one</h3>
+          <p tabindex="0"><em>Illustration</em></p>
+        </div>
+      </div>
+    </section>
+    <!-- work ends here -->
+
+    <!-- about starts here -->
+    <section class="container" id="about">
+      <h2 tabindex="0">About<span>Learn more about me</span></h2>
+      <img src="images/office.jpg" alt="portfolio sample" loading="lazy" />
+      <div class="story-edu-container">
+        <section>
+          <h3 tabindex="0">Story:</h3>
+          <p tabindex="0">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+            nobis quisquam. In eaque voluptas autem laudantium consequuntur
+            dolorem ipsa repellendus beatae aperiam nam quis fuga debitis
+            voluptatem ea amet eveniet impedit quos, adipisci quod placeat
+            temporibus accusantium ad. Ipsa distinctio sit tempora, architecto
+            totam ullam quae eius qui error odit.
+          </p>
+        </section>
+        <section>
+          <h3 tabindex="0">Education:</h3>
+          <div class="accordion">
+            <div class="accordion-item">
+              <h4 class="accordion-head accordion-head-active" tabindex="0">
+                Design school 2002
+              </h4>
+              <p class="accordion-body accordion-body-active" tabindex="0">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+                recusandae non asperiores numquam, quam repellendus suscipit
+                adipisci provident consequuntur in.
+              </p>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-head" tabindex="0">
+                Design special school 2005
+              </h4>
+              <p class="accordion-body" tabindex="0">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+                recusandae non asperiores numquam, quam repellendus suscipit
+                adipisci provident consequuntur in.
+              </p>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-head" tabindex="0">
+                Design pro school 2009
+              </h4>
+              <p class="accordion-body" tabindex="0">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+                recusandae non asperiores numquam, quam repellendus suscipit
+                adipisci provident consequuntur in.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- about ends here -->
+
+    <!-- contact starts here -->
+    <section class="container" id="contact">
+      <h2 tabindex="0">Contact<span>Where I am</span></h2>
+      <div class="social">
+        <img
+          src="images/flickr.png"
+          alt="social"
+          loading="lazy"
+          aria-label="Flickr"
+        />
+        <img
+          src="images/instagram.png"
+          alt="social"
+          loading="lazy"
+          aria-label="Instagram"
+        />
+        <img
+          src="images/facebook.jpg"
+          alt="social"
+          loading="lazy"
+          aria-label="Facebook"
+        />
+        <img
+          src="images/linkedin.png"
+          alt="social"
+          loading="lazy"
+          aria-label="LinkedIn"
+        />
+      </div>
+      <div class="form-map">
+        <form>
+          <label for="name">Name:</label>
+          <input
+            name="name"
+            id="name"
+            type="text"
+            required
+            autofocus
+            aria-label="Name"
+            aria-required="true"
+          />
+          <label for="email">Email:</label>
+          <input
+            name="email"
+            id="email"
+            type="email"
+            required
+            aria-label="Email"
+            aria-required="true"
+          />
+          <label for="message">Comments:</label>
+          <textarea
+            name="message"
+            id="message"
+            rows="15"
+            required
+            aria-label="Comments"
+            aria-required="true"
+          ></textarea>
+          <input
+            type="image"
+            name="submit"
+            alt="submit"
+            src="images/send.png"
+            aria-label="Submit"
+          />
+        </form>
+
+        <div class="map">
+          <div style="width: 100%">
+            <iframe
+              title="Google map - CDETB"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Poppintree%20Industrial%20Estate,%20Jamestown%20Rd,%20Finglas,%20D11+(Map%20for%20college%20project)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              width="100%"
+              height="250"
+              frameborder="0"
+              ><a href="https://www.maps.ie/distance-area-calculator.html"
+                >distance maps</a
+              ></iframe
+            >
+          </div>
+          <p tabindex="0">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro eos
+            labore fugiat magnam nam autem corrupti, quisquam, nostrum, earum
+            incidunt ullam nobis! Earum quae cumque sint fuga delectus ex velit!
+            Eum iure officia dolores minus? Placeat voluptatum cupiditate
+            dolorem quia sunt aliquam sapiente beatae, molestiae nobis tempora,
+            natus incidunt dolore! Est quae commodi adipisci illo doloremque,
+            quisquam facilis debitis mollitia ipsam ex et nisi nulla delectus,
+            culpa amet cupiditate in tempore ratione at voluptas?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- contact ends here-->
+  </body>
+</html>
